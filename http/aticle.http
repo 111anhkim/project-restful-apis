@@ -1,0 +1,23 @@
+
+#Get All Article
+GET http://localhost:8080/api/v1/articles HTTP/1.1
+
+###
+
+#Get a Article by ID
+GET http://localhost:8080/api/v1/articles/655b5c1090d40085c236d756 HTTP/1.1
+
+
+###
+
+## Creat a new Article
+POST http://localhost:8080/api/v1/articles HTTP/1.1
+content-type: application/json
+
+{
+"title": "Android released 14 beta", 
+"keyword": "android",
+"description": "To day Android released 14 beta", 
+"content": "Improved Battery Life, Larger Fonts and Smarter Scaling...", 
+"date": "2023-10-04"
+}
